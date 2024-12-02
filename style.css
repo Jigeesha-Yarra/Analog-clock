@@ -6,6 +6,8 @@ body{
     height: 100vh;
     margin: 0;
     background: #522258;
+    /* Use background for complex backgrounds; 
+    use background-color when you only need to specify a solid color. */
 }
 
 h1{
@@ -70,6 +72,14 @@ h1{
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    /*
+        Defines the speed curve of the transition using a cubic Bezier curve.
+        The numbers (0.1, 2.7, 0.58, 1) control the curve shape:
+        0.1, 2.7: Control the initial acceleration.
+        0.58, 1: Control the deceleration towards the end.
+        This creates a custom easing effect, where the animation starts slowly, 
+        accelerates dramatically, and ends smoothly.
+    */
 }
 
 .hour{
